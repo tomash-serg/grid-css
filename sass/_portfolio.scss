@@ -1,0 +1,23 @@
+.portfolio {
+  padding: 60px 0;
+}
+.portfolio-list-overlay {
+  display: none;
+}
+.portfolio-list {
+  display: grid;
+  grid-gap: 30px;
+}
+.portfolio-item {
+  outline: 1px solid #ccc;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
